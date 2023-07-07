@@ -15,6 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  const smoothScrollLinks = document.querySelectorAll('#toggleButton');
+
+  for (const link of smoothScrollLinks) {
+    link.addEventListener('click', smoothScrollToSection);
+  }
+  
+  function smoothScrollToSection(event) {
+    event.preventDefault();
+  
+    const targetId = event.target.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+  
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end', 
+    inline: 'nearest'
+    });
+  }
+  
+
+
   fetch('textoA.txt').then(response => response.text()).then(data => {
     fetch('textoB.txt').then(response2 => response2.text()).then(data2 => {
       let toggleButton = document.getElementById("toggleButton");
@@ -23,8 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleButton.addEventListener("click", function () {
         if (textToShow.textContent === data.trim()) {
           textToShow.textContent = data2.trim();
+          toggleButton.textContent = "Version Larga";
         } else {
           textToShow.textContent = data.trim();
+          toggleButton.textContent = "Version Corta";
         }
       })
     })

@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="estilos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Tupac</title>
 </head>
 <body>
-    <img id="perfil" src="/TupirfilBYN.png" alt="">
-    <h1>Tupac Rodríguez</h1>
-    <button id="toggleButton">Alternar Texto</button>
-    <p id="textToShow"></p>
+    <script>
+        AOS.init();
+      </script>
+    <div id="cabecera">
+        <div class="div1" id="perfilContainer">
+            <img src="/TupirfilBYN.png" alt="">
+        </div>
+        <h1 class="div2" id="nombre">Tupac<br>Rodríguez</h1>
+    </div>
+    <div id="subcabecera">
+        <h2 id="subtitulo">Fotógrafo - Técnico Electrónico - Programador</h2>
+        <button href="#textToShow" class="button-55" id="toggleButton">Version corta</button>
+    </div>
+    <p data-aos="zoom-in" id="textToShow"></p>
 </body>
 </html>
