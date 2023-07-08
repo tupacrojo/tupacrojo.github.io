@@ -1,9 +1,10 @@
-body {
-    font-family: Helvetica, sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #252525;
 }
 
 a {
@@ -14,9 +15,7 @@ i {
     text-decoration: none;
     outline: none;
 }
-h1,
-h2,
-p {
+h1,h2,p {
     color: #fff;
 }
 
@@ -55,8 +54,7 @@ p {
 }
 
 
-.div1,
-.div2 {
+.div1,.div2 {
     display: inline-block;
     width: 50%;
     vertical-align: top;
@@ -136,10 +134,6 @@ p {
     vertical-align: middle;
 }
 
-body {
-    background-color: #252525;
-}
-
 #textToShow {
     margin-top: 50px;
     font-size: 27px;
@@ -148,6 +142,4 @@ body {
     white-space: pre-wrap;
     width: 90%;
     text-align: left;
-
 }
-
