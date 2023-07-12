@@ -70,7 +70,7 @@ h1,h2,p {
 
 #redes i {
     box-shadow: rgb(0, 0, 0) 15px 28px 25px -18px;
-    font-size: 30px;
+    font-size: 3.75vw;
     color: #fff;
     margin-right: 10px;
     text-decoration: none;
@@ -149,8 +149,166 @@ h1,h2,p {
     text-align: left;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1920px) {
+
+    #cabecera {
+        padding-top: 22vh;
+        padding-bottom: 2vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #subcabecera {
+        text-align: center;
+        padding-bottom: 9vw;
+      }
+
+    #nombre {
+        font-size: 4vw; /* Utiliza una unidad relativa para el tamaño de la fuente */
+        line-height: 1.2;
+        white-space: pre;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw; /* Utiliza una unidad relativa para el margen inferior */
+        margin-top: -0.1vw; /* Utiliza una unidad relativa para el margen superior */
+      }
+      
+    #redes {
+        margin-left: 4vw;
+    }
+    
+    #redes i {
+        box-shadow: rgb(0, 0, 0) 15px 28px 25px -18px;
+        font-size: 2.2vw;
+        color: #fff;
+        margin-right: 10px;
+        text-decoration: none;
+        transition: all 120ms ease-in-out;
+    }
 
 
- 
+}
+
+
+@media (max-width: 1200px) {
+
+    #nombre {
+        font-size: 5vw; /* Utiliza una unidad relativa para el tamaño de la fuente */
+        line-height: 1.2;
+        white-space: pre;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw; /* Utiliza una unidad relativa para el margen inferior */
+        margin-top: -2.1vw;
+      }
+      
+      #cabecera {
+        padding-top: 22vh;
+        padding-bottom: 2vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #subcabecera {
+        text-align: center;
+        padding-bottom: 11vw;
+      }
+
+}
+
+@media (max-width: 800px) {
+
+    #nombre {
+        font-size: 5vw; /* Utiliza una unidad relativa para el tamaño de la fuente */
+        line-height: 1.2;
+        white-space: pre;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw; /* Utiliza una unidad relativa para el margen inferior */
+        margin-top: -2.1vw;
+      }
+      
+      #cabecera {
+        padding-top: 32vh;
+        padding-bottom: 2vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #subcabecera {
+        text-align: center;
+        padding-bottom: 35vw;
+      }
+
+}
+
+@media (max-width: 600px) {
+
+    #nombre {
+        font-size: 6vw; /* Utiliza una unidad relativa para el tamaño de la fuente */
+        line-height: 1.2;
+        white-space: pre;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw; /* Utiliza una unidad relativa para el margen inferior */
+        margin-top: -0.1vw; /* Utiliza una unidad relativa para el margen superior */
+      }
+
+      #cabecera {
+        padding-top: 35vh;
+        padding-bottom: 2vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #subcabecera {
+        text-align: center;
+        padding-bottom: 60vw;
+      }
+
+}
+
+@media (max-width: 400px) {
+
+    #nombre {
+        font-size: 7vw; /* Utiliza una unidad relativa para el tamaño de la fuente */
+        line-height: 1.2;
+        white-space: pre;
+        margin-left: 2.5vw;
+        margin-bottom: 2vw; /* Utiliza una unidad relativa para el margen inferior */
+        margin-top: -8.1vw;
+      }
+      
+    #redes {
+        margin-left: 4vw;
+    }
+    
+    #redes i {
+        box-shadow: rgb(0, 0, 0) 15px 28px 25px -18px;
+        font-size: 2.2vw;
+        color: #fff;
+        margin-right: 10px;
+        text-decoration: none;
+        transition: all 120ms ease-in-out;
+    }
+
+    #cabecera {
+        padding-top: 40vh;
+        padding-bottom: 2vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #subcabecera {
+        text-align: center;
+        padding-bottom: 80vw;
+      }
+
+
 }
