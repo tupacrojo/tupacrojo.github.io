@@ -322,6 +322,7 @@ h1,h2,p {
       #subcabecera {
         text-align: center;
         padding-bottom: 80vw;
+        font-size: 3vw;
       }
 
       #textToShow
