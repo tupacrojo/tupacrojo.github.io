@@ -238,6 +238,11 @@ h1,h2,p {
         justify-content: space-between;
       }
 
+      #textToShow
+      {
+        font-size: 3vw;
+      }
+
       #subcabecera {
         text-align: center;
         padding-bottom: 35vw;
@@ -283,6 +288,15 @@ h1,h2,p {
         margin-top: -8.1vw;
       }
       
+      #perfilContainer img {
+        margin-left: 19%;
+        width: 25vw;
+        max-width: 300px;
+        height: auto;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
     #redes {
         margin-left: 4vw;
     }
@@ -308,6 +322,11 @@ h1,h2,p {
       #subcabecera {
         text-align: center;
         padding-bottom: 80vw;
+      }
+
+      #textToShow
+      {
+        font-size: 4vw;
       }
 
 
