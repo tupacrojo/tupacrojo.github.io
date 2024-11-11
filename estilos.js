@@ -14,6 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const imageContainer = document.querySelector('.image-container');
+  const img = imageContainer.querySelector('img');
+  const video = imageContainer.querySelector('video');
+
+  imageContainer.addEventListener('mouseover', () => {
+    img.style.visibility = 'hidden';
+    video.style.visibility = 'visible';
+    video.currentTime = 0; // Reinicia el video al inicio
+    video.play();
+  });
+
+  imageContainer.addEventListener('mouseout', () => {
+    video.style.visibility = 'hidden';
+    video.pause();
+    img.style.visibility = 'visible';
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const smoothScrollLinks = document.querySelectorAll('#toggleButton');
