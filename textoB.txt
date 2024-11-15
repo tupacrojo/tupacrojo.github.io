@@ -1,9 +1,1 @@
-20 años.
-Técnico Electrónico, Aspirante a Guardavidas, Fotógrafo, Edito y grabo vídeos.
-Tengo conocimientos de programación en Arduino, C++, C, C#, Js, HTML, CSS, .Net, Sql, Python.
-
-Soy inquieto, perseverante, gracioso, detallista, atento y buen compañero.
-
-Me gusta entrenar, comer y dormir.
-
-Me cuesta estudiar cosas de memoria, no me cuesta aprender cosas prácticas y cuando logro aplicarlas de buena manera me queda.
+..
