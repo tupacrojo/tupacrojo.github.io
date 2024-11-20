@@ -5,7 +5,7 @@ function ReproductorAudio({ src }: { src: string }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState(85);
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -22,6 +22,7 @@ function ReproductorAudio({ src }: { src: string }) {
     const audio = audioRef.current;
     if (audio) {
       const updateCurrentTime = () => setCurrentTime(audio.currentTime);
+      console.log(audio.duration);
       const updateDuration = () => setDuration(audio.duration);
 
       audio.addEventListener("timeupdate", updateCurrentTime);

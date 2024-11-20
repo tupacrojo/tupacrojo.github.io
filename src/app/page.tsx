@@ -91,7 +91,7 @@ export default function Home() {
           <h2 className="text-6xl">Soy</h2>
           <ReproductorAudio src="/SoyTupac.wav" />
         </div>
-        <div className="flex flex-col pt-6 space-y-2 px-10 text-2xl">
+        <div className="flex flex-col pt-20 space-y-6 px-12 text-2xl">
           <TextoResaltado
             texto="Un fracasado en continuo fracaso, no lo veo como algo malo. Intento
             cosas, pero mido los riesgos que conllevan. ¿Arriesgar y ganar? Es
@@ -154,6 +154,16 @@ export default function Home() {
               "comer",
             ]}
           />
+        </div>
+      </div>
+      <div
+        id="section2"
+        className="min-h-screen flex flex-col items-center justify-center space-y-6"
+      >
+        <h2 className="text-6xl">Trabajos</h2>
+
+        <div className="h-96 w-10/12 rounded-xl bg-orange-700">
+          <p>texto</p>
         </div>
       </div>
     </>
