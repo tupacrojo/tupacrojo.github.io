@@ -162,8 +162,29 @@ export default function Home() {
       >
         <h2 className="text-6xl">Trabajos</h2>
 
-        <div className="h-96 w-10/12 rounded-xl bg-orange-700">
-          <p>texto</p>
+        <div className="flex flex-col h-auto w-96 rounded-xl bg-gray-900 p-4 space-y-4">
+          <p className="flex text-2xl justify-center font-semibold">
+            Full Stack
+          </p>
+          <div className="bg-white bg-opacity-5 p-2 rounded-xl">
+            <p>
+              Encargado en diseño, creacion e implentacion de herramientas para
+              uso de empleados, una extension de chrome que acorto tiempo de
+              trabajo. la extension es de uso privado.
+              <ul>
+                <li>
+                  + Agendar a clientes desde whatsapp directo a google contacts.
+                </li>
+                <li>+ Creacion de reportes automaticos.</li>
+                <li>+ Exportacion de tablas HTML a XLSX.</li>
+                <li>
+                  + Inyeccion de codigo y este modificaba la pagina para acceder
+                  a sus metodos y realizar peticiones de manera mas rapida y
+                  sencilla.
+                </li>
+              </ul>
+            </p>
+          </div>
         </div>
       </div>
     </>
