@@ -6,7 +6,7 @@ function BotonesSociales() {
     <div className="flex flex-row pt-4 justify-between">
       <BotonSocial href="https://www.youtube.com/channel/UCalW6c_G8Lzh5_VgEMl5cQQ">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           width="80px"
           height="80px"
@@ -33,7 +33,7 @@ function BotonesSociales() {
       </BotonSocial>
       <BotonSocial href="https://wa.me/5492233030664">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           width="80px"
           height="80px"
@@ -54,7 +54,7 @@ function BotonesSociales() {
       </BotonSocial>
       <BotonSocial href="https://www.instagram.com/tupacrodriguez/">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           width="80px"
           height="80px"
@@ -75,7 +75,7 @@ function BotonesSociales() {
       </BotonSocial>
       <BotonSocial href="https://github.com/tupacrojo">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           width="80px"
@@ -88,7 +88,7 @@ function BotonesSociales() {
       </BotonSocial>
       <BotonSocial href="https://www.linkedin.com/in/tupacrodriguez/">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           width="80px"
@@ -104,7 +104,7 @@ function BotonesSociales() {
           xmlns="http://www.w3.org/2000/svg"
           width="80px"
           height="80px"
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           viewBox="0 -4 32 32"
           version="1.1"
         >

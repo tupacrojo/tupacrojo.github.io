@@ -33,7 +33,7 @@ export default function Home() {
         id="cabecera"
         className="min-h-screen flex flex-row flex-nowrap content-center items-center justify-center space-x-4"
       >
-        <div className="image-container flex w-96 h-96 group rounded-full border-4 border-orange-700">
+        <div className="image-container flex w-32 h-32 lg:w-96 lg:h-96 group rounded-full border-4 border-orange-700">
           <Image
             src="/TupirfilBYN.png"
             width={698}
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="flex flex-col max-w-min">
           <div className="flex flex-col justify-between">
             <div className="flex flex-row justify-between items-center">
-              <h1 className="max-w-fit font-bold text-8xl cursor-default select-none">
+              <h1 className="max-w-fit font-bold text-3xl lg:text-8xl cursor-default select-none">
                 Tupac
               </h1>
               <div className="flex flex-col opacity-40 hover:opacity-100 transition-opacity duration-75">
@@ -65,19 +65,19 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <h1 className="max-w-fit font-bold text-8xl cursor-default select-none">
+            <h1 className="max-w-fit font-bold text-3xl lg:text-8xl cursor-default select-none">
               Rodríguez
             </h1>
           </div>
           <BotonesSociales />
-          <div className="flex flex-row justify-between">
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-xl pt-2 cursor-default select-none">
+          <div className="flex flex-row space-x-2 justify-between">
+            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-xs lg:text-xl pt-2 cursor-default select-none">
               Programador
             </p>
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-xl pt-2 cursor-default select-none">
+            <p className="opacity-40 text-nowrap hover:opacity-100 transition-opacity duration-75 text-xs lg:text-xl pt-2 cursor-default select-none">
               Técnico Electrónico
             </p>
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-xl pt-2 cursor-default select-none">
+            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-xs lg:text-xl pt-2 cursor-default select-none">
               Fotógrafo
             </p>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
         className="min-h-screen flex flex-col items-center justify-center"
       >
         <div className="flex flex-row items-center space-x-3">
-          <h2 className="text-6xl">Soy</h2>
+          <h2 className="text-3xl lg:text-6xl">Soy</h2>
           <ReproductorAudio src="/SoyTupac.wav" />
         </div>
         <div className="flex flex-col pt-20 space-y-6 px-12 text-2xl">
@@ -161,16 +161,17 @@ export default function Home() {
         className="min-h-screen flex flex-col items-center justify-center space-y-6"
       >
         <h2 className="text-6xl">Trabajos</h2>
-
-        <div className="flex flex-col h-auto w-96 rounded-xl bg-gray-900 p-4 space-y-4">
-          <p className="flex text-2xl justify-center font-semibold">
-            Full Stack
-          </p>
-          <div className="bg-white bg-opacity-5 p-2 rounded-xl">
-            <p>
-              Encargado en diseño, creacion e implentacion de herramientas para
-              uso de empleados, una extension de chrome que acorto tiempo de
-              trabajo. la extension es de uso privado.
+        <div className="flex flex-row space-x-2">
+          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-30 p-4 space-y-4">
+            <p className="flex text-2xl justify-center font-semibold">
+              Full Stack
+            </p>
+            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
+              <p>
+                Encargado en diseño, creacion e implentacion de herramientas
+                para uso de empleados, una extension de chrome que acorto tiempo
+                de trabajo. la extension es de uso privado.
+              </p>
               <ul>
                 <li>
                   + Agendar a clientes desde whatsapp directo a google contacts.
@@ -183,7 +184,33 @@ export default function Home() {
                   sencilla.
                 </li>
               </ul>
+            </div>
+          </div>
+          <div className="flex flex-col h-auto w-96 rounded-xl bg-gray-900 p-4 space-y-4">
+            <p className="flex text-2xl justify-center font-semibold">
+              Proyecto Final
             </p>
+            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
+              <p>Proyecto realizado como entrega final de la UTN</p>
+              <ul>
+                <li>
+                  + ABM de empleados, clientes, productos, ventas y reportes.
+                </li>
+                <li>+ Reportes Segun ROL de usuario</li>
+                <li>+ Exportacion de tablas HTML a XLSX.</li>
+                <li>
+                  + Inyeccion de codigo y este modificaba la pagina para acceder
+                  a sus metodos y realizar peticiones de manera mas rapida y
+                  sencilla.
+                </li>
+              </ul>
+              <a
+                className="text-orange-400 hover:text-orange-500"
+                href="https://tupacrodriguez.com.ar/ProyectoFinal"
+              >
+                Demo
+              </a>
+            </div>
           </div>
         </div>
       </div>

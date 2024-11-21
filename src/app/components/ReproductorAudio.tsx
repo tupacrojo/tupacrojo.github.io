@@ -36,7 +36,7 @@ function ReproductorAudio({ src }: { src: string }) {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col space-y-2">
       <audio
         className="hidden"
         ref={audioRef}
@@ -57,7 +57,7 @@ function ReproductorAudio({ src }: { src: string }) {
         <button onClick={togglePlay}>
           {isPlaying ? (
             <svg
-              className="w-6 h-6"
+              className="w-3 h-3 lg:w-6 lg:h-6"
               xmlns="http://www.w3.org/2000/svg"
               width="80px"
               height="80px"
@@ -75,7 +75,7 @@ function ReproductorAudio({ src }: { src: string }) {
             </svg>
           ) : (
             <svg
-              className="w-6 h-6"
+              className="w-3 h-3 lg:w-6 lg:h-6"
               xmlns="http://www.w3.org/2000/svg"
               width="80px"
               height="80px"
@@ -104,7 +104,7 @@ function ReproductorAudio({ src }: { src: string }) {
       </div>
       <div className="flex flex-row space-x-2">
         <svg
-          className="w-6 h-6"
+          className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           width="80px"
           height="80px"
