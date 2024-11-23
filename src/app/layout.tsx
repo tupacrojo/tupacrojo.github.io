@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Tupac",
+  title: "Portafolio Tupac",
   description: "Tupac necesita un portfolio, y hago uno",
 };
 
