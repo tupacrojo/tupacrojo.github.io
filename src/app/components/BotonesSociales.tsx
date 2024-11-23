@@ -3,8 +3,8 @@ import BotonSocial from "./BotonSocial";
 
 function BotonesSociales() {
   return (
-    <div className="flex flex-row pt-4 justify-between">
-      <BotonSocial href="https://www.youtube.com/channel/UCalW6c_G8Lzh5_VgEMl5cQQ">
+    <div className="flex flex-row pt-2 sm:pt-4 space-x-2 justify-around">
+      {/* <BotonSocial href="https://www.youtube.com/channel/UCalW6c_G8Lzh5_VgEMl5cQQ">
         <svg
           className="w-3 h-3 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +72,30 @@ function BotonesSociales() {
             </g>
           </g>
         </svg>
+      </BotonSocial> */}
+      <BotonSocial href="mailto::tupacrodriguez2003@gmail.com">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80px"
+          height="80px"
+          className="w-4 h-4 lg:w-6 lg:h-6"
+          viewBox="0 -4 32 32"
+          version="1.1"
+        >
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <g
+              transform="translate(-412.000000, -259.000000)"
+              fill="currentColor"
+            >
+              <path d="M442,279 C442,279.203 441.961,279.395 441.905,279.578 L433,270 L442,263 L442,279 L442,279 Z M415.556,280.946 L424.58,271.33 L428,273.915 L431.272,271.314 L440.444,280.946 C440.301,280.979 415.699,280.979 415.556,280.946 L415.556,280.946 Z M414,279 L414,263 L423,270 L414.095,279.578 C414.039,279.395 414,279.203 414,279 L414,279 Z M441,261 L428,271 L415,261 L441,261 L441,261 Z M440,259 L416,259 C413.791,259 412,260.791 412,263 L412,279 C412,281.209 413.791,283 416,283 L440,283 C442.209,283 444,281.209 444,279 L444,263 C444,260.791 442.209,259 440,259 L440,259 Z"></path>
+            </g>
+          </g>
+        </svg>
+        <p className="text-xs pl-2">tupacrojo@gmail.com</p>
       </BotonSocial>
       <BotonSocial href="https://github.com/tupacrojo">
         <svg
-          className="w-3 h-3 lg:w-6 lg:h-6"
+          className="w-4 h-4 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           width="80px"
@@ -88,7 +108,7 @@ function BotonesSociales() {
       </BotonSocial>
       <BotonSocial href="https://www.linkedin.com/in/tupacrodriguez/">
         <svg
-          className="w-3 h-3 lg:w-6 lg:h-6"
+          className="w-4 h-4 lg:w-6 lg:h-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           width="80px"
@@ -97,25 +117,6 @@ function BotonesSociales() {
           version="1.1"
         >
           <path d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z" />
-        </svg>
-      </BotonSocial>
-      <BotonSocial href="mailto::tupacrodriguez2003@gmail.com">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="80px"
-          height="80px"
-          className="w-3 h-3 lg:w-6 lg:h-6"
-          viewBox="0 -4 32 32"
-          version="1.1"
-        >
-          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-            <g
-              transform="translate(-412.000000, -259.000000)"
-              fill="currentColor"
-            >
-              <path d="M442,279 C442,279.203 441.961,279.395 441.905,279.578 L433,270 L442,263 L442,279 L442,279 Z M415.556,280.946 L424.58,271.33 L428,273.915 L431.272,271.314 L440.444,280.946 C440.301,280.979 415.699,280.979 415.556,280.946 L415.556,280.946 Z M414,279 L414,263 L423,270 L414.095,279.578 C414.039,279.395 414,279.203 414,279 L414,279 Z M441,261 L428,271 L415,261 L441,261 L441,261 Z M440,259 L416,259 C413.791,259 412,260.791 412,263 L412,279 C412,281.209 413.791,283 416,283 L440,283 C442.209,283 444,281.209 444,279 L444,263 C444,260.791 442.209,259 440,259 L440,259 Z"></path>
-            </g>
-          </g>
         </svg>
       </BotonSocial>
     </div>
