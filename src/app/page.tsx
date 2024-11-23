@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div
         id="section1"
-        className="min-h-screen sm:max-w-screen-sm flex flex-col sm:flex-row items-center justify-around"
+        className="min-h-screen flex flex-col sm:flex-row items-center justify-around"
       >
         <QuienSoy />
         <Stack />
