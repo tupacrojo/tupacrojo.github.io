@@ -7,7 +7,7 @@ interface MyComponentProps {
 
 function BotonTecno({ title, children }: MyComponentProps) {
   return (
-    <div className="min-w-36 bg-orange-600 rounded-xl p-2 flex flex-row justify-center items-center w-auto h-auto space-x-2">
+    <div className="min-w-32 lg:min-w-36 bg-orange-600 rounded-xl p-2 flex flex-row justify-center items-center w-auto h-auto space-x-2">
       {children}
       {title && <p>{title}</p>}
     </div>

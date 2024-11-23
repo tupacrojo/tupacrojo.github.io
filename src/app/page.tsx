@@ -85,7 +85,7 @@ export default function Home() {
       </div>
       <div
         id="section1"
-        className="min-h-screen flex flex-row items-center justify-around"
+        className="min-h-screen sm:max-w-screen-sm flex flex-col sm:flex-row items-center justify-around"
       >
         <QuienSoy />
         <Stack />
@@ -95,7 +95,7 @@ export default function Home() {
         className="min-h-screen flex flex-col items-center justify-center space-y-6"
       >
         <h2 className="text-6xl">Trabajos</h2>
-        <div className="flex flex-row space-x-2">
+        <div className="flex flex-col lg:flex-row space-x-2">
           <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-30 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Full Stack

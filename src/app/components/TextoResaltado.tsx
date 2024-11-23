@@ -15,7 +15,7 @@ const TextoResaltado: React.FC<TextoResaltadoProps> = ({
 
     return partes.map((parte, index) =>
       palabrasResaltadas.includes(parte.toLowerCase()) ? (
-        <span key={index} className="text-orange-500">
+        <span key={index} className="font-semibold text-orange-500">
           {parte}
         </span>
       ) : (

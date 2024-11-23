@@ -4,12 +4,12 @@ import TextoResaltado from "./TextoResaltado";
 
 function QuienSoy() {
   return (
-    <div className="flex flex-col items-center w-2/5 rounded-xl space-y-2">
+    <div className="flex flex-col items-center w-5/6 lg:w-2/5 rounded-xl space-y-2">
       <div className="flex flex-row items-center space-x-3">
         <h2 className="text-3xl lg:text-6xl">Soy</h2>
         <ReproductorAudio src="../../SoyTupac2.wav" />
       </div>
-      <div className="flex flex-col space-y-2 text-2xl">
+      <div className="flex flex-col space-y-2 text-base lg:text-2xl">
         <TextoResaltado
           texto="Un fracasado en continuo fracaso, no es malo. Intento cosas."
           palabrasResaltadas={["fracasado", "intento"]}

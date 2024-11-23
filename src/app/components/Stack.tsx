@@ -4,11 +4,11 @@ import FilaStack from "./FilaStack";
 
 function Stack() {
   return (
-    <div className="flex flex-col w-2/5 space-y-4">
+    <div className="flex flex-col w-5/6 lg:w-2/5 space-y-4">
       <FilaStack title="Programacion">
         <BotonTecno title="Tailwind">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -24,7 +24,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="React">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -37,7 +37,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Next.js">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -50,7 +50,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="JavaScript">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -62,7 +62,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="TypeScript">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -75,7 +75,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Node.js">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             width="800px"
             height="800px"
@@ -94,7 +94,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Angular">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -107,7 +107,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno>
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 38.000089 42.000031"
             width="380.00089"
@@ -145,7 +145,7 @@ function Stack() {
             />
           </svg>
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
@@ -157,7 +157,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Python">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             width="800px"
@@ -170,7 +170,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Java">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -183,7 +183,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Git">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             width="800px"
             height="800px"
@@ -201,7 +201,7 @@ function Stack() {
       <FilaStack title="Gestión de proyectos">
         <BotonTecno title="Trello">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -213,7 +213,7 @@ function Stack() {
         </BotonTecno>
         <BotonTecno title="Jira">
           <svg
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             width="800px"
@@ -229,7 +229,7 @@ function Stack() {
         <BotonTecno title="Photoshop">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             width="800px"
             height="800px"
@@ -242,7 +242,7 @@ function Stack() {
         <BotonTecno title="After Effects">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             width="800px"
             height="800px"
@@ -255,7 +255,7 @@ function Stack() {
         <BotonTecno title="Audition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             width="800px"
             height="800px"
@@ -268,7 +268,7 @@ function Stack() {
         <BotonTecno title="Lightroom">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             width="800px"
             height="800px"
@@ -281,7 +281,7 @@ function Stack() {
         <BotonTecno title="Premiere">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-10 h-10"
+            className="w-5 h-5 lg:w-10 lg:h-10"
             fill="currentColor"
             width="800px"
             height="800px"
