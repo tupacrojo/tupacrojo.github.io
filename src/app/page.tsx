@@ -94,9 +94,9 @@ export default function Home() {
         id="section2"
         className="min-h-screen flex flex-col items-center justify-center space-y-6"
       >
-        <h2 className="text-6xl">Trabajos</h2>
+        <h2 className="text-6xl font-bold">Trabajos</h2>
         <div className="flex flex-col lg:flex-row space-x-2">
-          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-30 p-4 space-y-4">
+          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-10 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Full Stack
             </p>
@@ -120,7 +120,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col h-auto w-96 rounded-xl bg-gray-900 p-4 space-y-4">
+          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-10 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Proyecto Final
             </p>
@@ -138,6 +138,8 @@ export default function Home() {
                   sencilla.
                 </li>
               </ul>
+            </div>
+            <div className="flex justify-center">
               <a
                 className="text-orange-400 hover:text-orange-500"
                 href="https://tupacrodriguez.com.ar/ProyectoFinal"
