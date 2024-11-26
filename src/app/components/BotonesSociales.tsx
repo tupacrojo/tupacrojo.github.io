@@ -91,7 +91,7 @@ function BotonesSociales() {
             </g>
           </g>
         </svg>
-        <p className="text-xs pl-2">tupacrojo@gmail.com</p>
+        <p className="text-xs pl-2 select-text">tupacrodriguez2003@gmail.com</p>
       </BotonSocial>
       <BotonSocial href="https://github.com/tupacrojo">
         <svg
