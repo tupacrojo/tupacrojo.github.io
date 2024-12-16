@@ -92,11 +92,11 @@ export default function Home() {
       </div>
       <div
         id="section2"
-        className="min-h-screen flex flex-col items-center justify-center space-y-6"
+        className="min-h-screen flex flex-col items-center justify-center space-y-6 pb-6"
       >
         <h2 className="text-6xl font-bold">Trabajos</h2>
-        <div className="flex flex-col lg:flex-row space-x-2">
-          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-10 p-4 space-y-4">
+        <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-2">
+          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Full Stack
             </p>
@@ -120,7 +120,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col h-auto w-96 rounded-xl bg-white bg-opacity-10 p-4 space-y-4">
+          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Proyecto Final
             </p>
@@ -143,6 +143,27 @@ export default function Home() {
               <a
                 className="text-orange-400 hover:text-orange-500"
                 href="https://tupacrodriguez.com.ar/ProyectoFinal"
+              >
+                Demo
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
+            <p className="flex text-2xl justify-center font-semibold">
+              Momo Tiltear
+            </p>
+            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
+              <p>
+                Proyecto con IA - Generador de respuestas para usar en chat de
+                plataforma kick.
+              </p>
+              <p>+ Control de usuarios con firebase.</p>
+              <p>+ Almacenamiento de chats para mejora del modelo</p>
+            </div>
+            <div className="flex justify-center">
+              <a
+                className="text-orange-400 hover:text-orange-500"
+                href="https://momotilte.ar"
               >
                 Demo
               </a>
