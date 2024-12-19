@@ -85,17 +85,17 @@ export default function Home() {
       </div>
       <div
         id="section1"
-        className="min-h-screen flex flex-col sm:flex-row items-center justify-around"
+        className="min-h-screen flex flex-col sm:flex-row px-4 space-x-4 items-center justify-around py-4"
       >
         <QuienSoy />
         <Stack />
       </div>
       <div
         id="section2"
-        className="min-h-screen flex flex-col items-center justify-center space-y-6 pb-6"
+        className="min-h-screen flex flex-col items-center lg:space-x-4 justify-center space-y-6 py-6"
       >
         <h2 className="text-6xl font-bold">Trabajos</h2>
-        <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-2">
+        <div className="flex flex-col flex-wrap content-around justify-evenly space-y-2 xl:space-x-4 lg:space-y-0 lg:flex-row min-h-screen">
           <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
             <p className="flex text-2xl justify-center font-semibold">
               Full Stack
@@ -106,18 +106,16 @@ export default function Home() {
                 para uso de empleados, una extension de chrome que acorto tiempo
                 de trabajo. la extension es de uso privado.
               </p>
-              <ul>
-                <li>
-                  + Agendar a clientes desde whatsapp directo a google contacts.
-                </li>
-                <li>+ Creacion de reportes automaticos.</li>
-                <li>+ Exportacion de tablas HTML a XLSX.</li>
-                <li>
-                  + Inyeccion de codigo y este modificaba la pagina para acceder
-                  a sus metodos y realizar peticiones de manera mas rapida y
-                  sencilla.
-                </li>
-              </ul>
+              <p>
+                + Agendar a clientes desde whatsapp directo a google contacts.
+              </p>
+              <p>+ Creacion de reportes automaticos.</p>
+              <p>+ Exportacion de tablas HTML a XLSX.</p>
+              <p>
+                + Inyeccion de codigo y este modificaba la pagina para acceder a
+                sus metodos y realizar peticiones de manera mas rapida y
+                sencilla.
+              </p>
             </div>
           </div>
           <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
@@ -126,18 +124,13 @@ export default function Home() {
             </p>
             <div className="bg-white bg-opacity-5 p-2 rounded-xl">
               <p>Proyecto realizado como entrega final de la UTN</p>
-              <ul>
-                <li>
-                  + ABM de empleados, clientes, productos, ventas y reportes.
-                </li>
-                <li>+ Reportes Segun ROL de usuario</li>
-                <li>+ Exportacion de tablas HTML a XLSX.</li>
-                <li>
-                  + Inyeccion de codigo y este modificaba la pagina para acceder
-                  a sus metodos y realizar peticiones de manera mas rapida y
-                  sencilla.
-                </li>
-              </ul>
+              <p>+ ABM de empleados, clientes, productos, ventas y reportes.</p>
+              <p>+ Reportes Segun ROL de usuario</p>
+              <p>Credenciales de prueba:</p>
+              <p>Administrador: eve.gen 12345</p>
+              <p>Encargado: tupi.rodriguez 12345</p>
+              <p>Vendedor: juan.martel 12345</p>
+              <p>Supervisor: nico.lope 12345</p>
             </div>
             <div className="flex justify-center">
               <a
