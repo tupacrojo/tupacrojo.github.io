@@ -3,6 +3,7 @@ import Image from "next/image";
 import BotonesSociales from "./components/BotonesSociales";
 import QuienSoy from "./components/QuienSoy";
 import Stack from "./components/Stack";
+import CardWork from "./components/CardWork";
 
 export default function Home() {
   function calcularEdad(nacimiento: Date) {
@@ -96,72 +97,75 @@ export default function Home() {
       >
         <h2 className="text-6xl font-bold">Trabajos</h2>
         <div className="flex flex-col flex-wrap content-around justify-evenly space-y-2 xl:space-x-4 lg:space-y-0 lg:flex-row min-h-screen">
-          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
-            <p className="flex text-2xl justify-center font-semibold">
-              Full Stack
-            </p>
-            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
-              <p>
-                Encargado en diseño, creacion e implentacion de herramientas
-                para uso de empleados, una extension de chrome que acorto tiempo
-                de trabajo. la extension es de uso privado.
-              </p>
-              <p>
-                + Agendar a clientes desde whatsapp directo a google contacts.
-              </p>
-              <p>+ Creacion de reportes automaticos.</p>
-              <p>+ Exportacion de tablas HTML a XLSX.</p>
-              <p>
-                + Inyeccion de codigo y este modificaba la pagina para acceder a
-                sus metodos y realizar peticiones de manera mas rapida y
-                sencilla.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
-            <p className="flex text-2xl justify-center font-semibold">
-              Proyecto Final
-            </p>
-            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
-              <p>Proyecto realizado como entrega final de la UTN</p>
-              <p>+ ABM de empleados, clientes, productos, ventas y reportes.</p>
-              <p>+ Reportes Segun ROL de usuario</p>
-              <p>Credenciales de prueba:</p>
-              <p>Administrador: eve.gen 12345</p>
-              <p>Encargado: tupi.rodriguez 12345</p>
-              <p>Vendedor: juan.martel 12345</p>
-              <p>Supervisor: nico.lope 12345</p>
-            </div>
-            <div className="flex justify-center">
+          <CardWork
+            title="Full Stack"
+            content={
+              <>
+                <p>
+                  Encargado en diseño, creacion e implentacion de herramientas
+                  para uso de empleados, una extension de chrome que acorto
+                  tiempo de trabajo. la extension es de uso privado.
+                </p>
+                <p>
+                  + Agendar a clientes desde whatsapp directo a google contacts.
+                </p>
+                <p>+ Creacion de reportes automaticos.</p>
+                <p>+ Exportacion de tablas HTML a XLSX.</p>
+                <p>
+                  + Inyeccion de codigo y este modificaba la pagina para acceder
+                  a sus metodos y realizar peticiones de manera mas rapida y
+                  sencilla.
+                </p>
+              </>
+            }
+          />
+
+          <CardWork
+            title="Proyecto Final"
+            content={
+              <>
+                <p>Proyecto realizado como entrega final de la UTN</p>
+                <p>
+                  + ABM de empleados, clientes, productos, ventas y reportes.
+                </p>
+                <p>+ Reportes Segun ROL de usuario</p>
+                <p>Credenciales de prueba:</p>
+                <p>Administrador: eve.gen 12345</p>
+                <p>Encargado: tupi.rodriguez 12345</p>
+                <p>Vendedor: juan.martel 12345</p>
+                <p>Supervisor: nico.lope 12345</p>
+              </>
+            }
+            footer={
               <a
                 className="text-orange-400 hover:text-orange-500"
                 href="https://tupacrodriguez.com.ar/ProyectoFinal"
               >
                 Demo
               </a>
-            </div>
-          </div>
-          <div className="flex flex-col h-auto w-96 rounded-xl justify-between bg-white bg-opacity-10 p-4 space-y-4">
-            <p className="flex text-2xl justify-center font-semibold">
-              Momo Tiltear
-            </p>
-            <div className="bg-white bg-opacity-5 p-2 rounded-xl">
-              <p>
-                Proyecto con IA - Generador de respuestas para usar en chat de
-                plataforma kick.
-              </p>
-              <p>+ Control de usuarios con firebase.</p>
-              <p>+ Almacenamiento de chats para mejora del modelo</p>
-            </div>
-            <div className="flex justify-center">
+            }
+          />
+          <CardWork
+            title="Momo Tiltear"
+            content={
+              <>
+                <p>
+                  Proyecto con IA - Generador de respuestas para usar en chat de
+                  plataforma kick.
+                </p>
+                <p>+ Control de usuarios con firebase.</p>
+                <p>+ Almacenamiento de chats para mejora del modelo</p>
+              </>
+            }
+            footer={
               <a
                 className="text-orange-400 hover:text-orange-500"
                 href="https://momotilte.ar"
               >
                 Demo
               </a>
-            </div>
-          </div>
+            }
+          />
         </div>
       </div>
     </>
