@@ -15,8 +15,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio Tupac",
+  title: "Portfolio Tupac",
   description: "Tupac necesita un portfolio, tupac hace uno",
+  robots: "index, follow",
+  creator: "Tupac Rodríguez",
 };
 
 export default function RootLayout({
