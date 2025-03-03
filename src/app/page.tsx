@@ -102,9 +102,7 @@ export default function Home() {
             content={
               <>
                 <p>
-                  Encargado en diseño, creacion e implentacion de herramientas
-                  para uso de empleados, una extension de chrome que acorto
-                  tiempo de trabajo. la extension es de uso privado.
+                  Identifiqué procesos manuales y repetitivos, y desarrollé una extensión web para automatizarlos. Uso privado.
                 </p>
                 <p>
                   + Agendar a clientes desde whatsapp directo a google contacts.
