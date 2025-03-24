@@ -143,27 +143,6 @@ export default function Home() {
               </a>
             }
           />
-          <CardWork
-            title="Momo Tiltear"
-            content={
-              <>
-                <p>
-                  Proyecto con IA - Generador de respuestas para usar en chat de
-                  plataforma kick.
-                </p>
-                <p>+ Control de usuarios con firebase.</p>
-                <p>+ Almacenamiento de chats para mejora del modelo</p>
-              </>
-            }
-            footer={
-              <a
-                className="text-orange-400 hover:text-orange-500"
-                href="https://momotilte.ar"
-              >
-                Demo
-              </a>
-            }
-          />
         </div>
       </div>
     </>
