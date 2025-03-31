@@ -7,32 +7,28 @@ function QuienSoy() {
     <div className="flex flex-col items-center w-5/6 lg:w-2/5 rounded-xl space-y-2">
       <div className="flex flex-row items-center space-x-3">
         <h2 className="text-3xl lg:text-6xl">Soy</h2>
-        <ReproductorAudio src="../../SoyTupac2.wav" />
+        //<ReproductorAudio src="../../SoyTupac2.wav" />
       </div>
       <div className="flex flex-col space-y-2 text-base lg:text-2xl">
         <TextoResaltado
-          texto="Un fracasado en continuo fracaso, no es malo. Intento cosas."
-          palabrasResaltadas={["fracasado", "intento"]}
+          texto="En el que piensan cuando se tiene que solucionar algo tecnológico quizás porque desde chico me interese en todo, demasiado curioso."
+          palabrasResaltadas={["solucionar", "tecnológico", "curioso"]}
         />
         <TextoResaltado
-          texto="La programación no llegó a mí como un trabajo, siempre quise crear algo mío y darle forma como yo quise. Desde chico estoy en el ámbito de la fotografía."
-          palabrasResaltadas={["programación", "fotografía"]}
+          texto="Me gusta resolver problemas, la creatividad y el pensamiento lógico siempre presente, me gusta crear, soluciones o nuevos problemas. "
+          palabrasResaltadas={["resolver", "problemas", "creatividad", "pensamiento", "lógico", "crear", "soluciones"]}
         />
         <TextoResaltado
-          texto="Iba a estudiar informática, en la Técnica 3, pero me decidí por electrónica, no me arrepiento. Programación en la UTN. Ahora Guardavidas, en este momento hay un cóctel de habilidades extrañas. Todas, siempre, tienen relación."
-          palabrasResaltadas={["informática", "electrónica"]}
+          texto="Siempre estoy creando, pienso mucho y me apasiona poder resolver problemas, mientras más complejos mejor. Ya que me al resolverlos obtengo la mejor sensación."
+          palabrasResaltadas={["resolver","problemas", "resolverlos", "sensación"]}
         />
         <TextoResaltado
-          texto="Sospecho que la puntualidad, la habilidad de prever actitudes y comportamientos ayudan en la programación, la fotografía y en la prevención acuática."
-          palabrasResaltadas={["puntualidad", "prever", "prevención"]}
+          texto="Estudie Programación, Electrónica y Fotografía. La creación está en todas."
+          palabrasResaltadas={["Programación", "Electrónica", "Fotografía"]}
         />
         <TextoResaltado
-          texto="Prejuicioso, me ayuda a descifrar a las personas. No está bien juzgar... entonces digamos que soy previsor. Intento entender a la persona con la que hablo, su humor, sus intereses y solucionar problemas de la forma más eficiente."
-          palabrasResaltadas={["previsor", "eficiente"]}
-        />
-        <TextoResaltado
-          texto="Creía ser alguien poco sociable, la gente dice que no. Inclusive dicen que soy extrovertido y gracioso, hablo poco, solo cuando lo creo necesario. "
-          palabrasResaltadas={["extrovertido", "gracioso"]}
+          texto="La gente me describe como alguien carismático, extrovertido y gracioso, pero yo se que hablo poco y solo cuando lo creo necesario."
+          palabrasResaltadas={["carismático", "extrovertido", "gracioso"]}
         />
       </div>
     </div>
