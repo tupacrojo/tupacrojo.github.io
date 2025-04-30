@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -16,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Portfolio Tupac",
-  description: "Tupac necesita un portfolio, tupac hace uno",
+  description:
+    "Portfolio personal de Tupac Rodríguez, desarrollador web. Creativo y con soluciones a medida.",
   robots: "index, follow",
   creator: "Tupac Rodríguez",
 };
@@ -28,6 +30,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '691906099990143');
+          fbq('track', 'PageView');
+          `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=691906099990143&ev=PageView&noscript=1"
+          />
+        </noscript>
+      </Head>
       <GoogleTagManager gtmId="GTM-5QBSM2W" />
       <GoogleAnalytics gaId="G-X1M8EQ604Y" />
       <body
