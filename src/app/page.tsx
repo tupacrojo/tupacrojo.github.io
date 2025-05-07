@@ -4,6 +4,7 @@ import BotonesSociales from "@/app/components/BotonesSociales";
 import QuienSoy from "@/app/components/QuienSoy";
 import Stack from "@/app/components/Stack";
 import CardWork from "@/app/components/CardWork";
+import Link from "next/link";
 
 export default function Home() {
   function calcularEdad(nacimiento: Date) {
@@ -86,13 +87,37 @@ export default function Home() {
           </div>
           <BotonesSociales />
           <div className="flex flex-row space-x-2 justify-between">
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
+            <p
+              onClick={() => {
+                window.fbq("trackCustom", "ClickProgramador", {
+                  event: "Click en el texto que solo hace hover",
+                  timestamp: new Date().toISOString(),
+                });
+              }}
+              className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none"
+            >
               Programador
             </p>
-            <p className="opacity-40 text-nowrap hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
+            <p
+              onClick={() => {
+                window.fbq("trackCustom", "ClickTecnico", {
+                  event: "Click en el texto que solo hace hover",
+                  timestamp: new Date().toISOString(),
+                });
+              }}
+              className="opacity-40 text-nowrap hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none"
+            >
               Técnico Electrónico
             </p>
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
+            <p
+              onClick={() => {
+                window.fbq("trackCustom", "ClickFotografo", {
+                  event: "Click en el texto que solo hace hover",
+                  timestamp: new Date().toISOString(),
+                });
+              }}
+              className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none"
+            >
               Fotógrafo
             </p>
           </div>
@@ -150,12 +175,18 @@ export default function Home() {
               </>
             }
             footer={
-              <a
+              <Link
+                onClick={() => {
+                  window.fbq("trackCustom", "ClickDemoProyectoFinal", {
+                    event: "Click en el demo de proyecto final",
+                    timestamp: new Date().toISOString(),
+                  });
+                }}
                 className="text-orange-400 hover:text-orange-500"
                 href="https://tupacrodriguez.com.ar/ProyectoFinal"
               >
                 Demo
-              </a>
+              </Link>
             }
           />
         </div>
