@@ -1,11 +1,19 @@
 "use client";
 import Image from "next/image";
-import BotonesSociales from "./components/BotonesSociales";
-import QuienSoy from "./components/QuienSoy";
-import Stack from "./components/Stack";
-import CardWork from "./components/CardWork";
+import BotonesSociales from "@/app/components/BotonesSociales";
+import QuienSoy from "@/app/components/QuienSoy";
+import Stack from "@/app/components/Stack";
+import CardWork from "@/app/components/CardWork";
+import { useState } from "react";
 
 export default function Home() {
+  const [interaction, setInteraction] = useState("");
+
+  const handleInteraction = (action: "hover" | "click", elementId: string) => {
+    setInteraction(`${action} en ${elementId}`);
+    console.log(`${action} en ${elementId}`);
+  };
+
   function calcularEdad(nacimiento: Date) {
     const hoy = new Date();
     let años = hoy.getFullYear() - nacimiento.getFullYear();
@@ -34,7 +42,11 @@ export default function Home() {
         id="cabecera"
         className="min-h-screen flex flex-col sm:flex-row flex-nowrap content-center items-center justify-center sm:space-x-4"
       >
-        <div className="image-container flex w-48 h-48 lg:w-96 lg:h-96 group rounded-full border-4 border-orange-700">
+        <div
+          onMouseEnter={() => handleInteraction("hover", "Imagen de perfil")}
+          onClick={() => handleInteraction("click", "Imagen de perfil")}
+          className="image-container flex w-48 h-48 lg:w-96 lg:h-96 group rounded-full border-4 border-orange-700"
+        >
           <Image
             src="/TupirfilBYN.png"
             width={698}
@@ -72,7 +84,13 @@ export default function Home() {
           </div>
           <BotonesSociales />
           <div className="flex flex-row space-x-2 justify-between">
-            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
+            <p
+              onMouseEnter={() =>
+                handleInteraction("hover", "hover en programador")
+              }
+              onClick={() => handleInteraction("click", "click en programador")}
+              className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none"
+            >
               Programador
             </p>
             <p className="opacity-40 text-nowrap hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
@@ -102,7 +120,8 @@ export default function Home() {
             content={
               <>
                 <p>
-                  Identifiqué procesos manuales y repetitivos, y desarrollé una extensión web para automatizarlos. Uso privado.
+                  Identifiqué procesos manuales y repetitivos, y desarrollé una
+                  extensión web para automatizarlos. Uso privado.
                 </p>
                 <p>
                   + Agendar a clientes desde whatsapp directo a google contacts.
