@@ -4,16 +4,9 @@ import BotonesSociales from "@/app/components/BotonesSociales";
 import QuienSoy from "@/app/components/QuienSoy";
 import Stack from "@/app/components/Stack";
 import CardWork from "@/app/components/CardWork";
-import { useState } from "react";
+import ReactPixel from "react-facebook-pixel";
 
 export default function Home() {
-  const [interaction, setInteraction] = useState("");
-
-  const handleInteraction = (action: "hover" | "click", elementId: string) => {
-    setInteraction(`${action} en ${elementId}`);
-    console.log(`${action} en ${elementId}`);
-  };
-
   function calcularEdad(nacimiento: Date) {
     const hoy = new Date();
     let años = hoy.getFullYear() - nacimiento.getFullYear();
@@ -43,8 +36,18 @@ export default function Home() {
         className="min-h-screen flex flex-col sm:flex-row flex-nowrap content-center items-center justify-center sm:space-x-4"
       >
         <div
-          onMouseEnter={() => handleInteraction("hover", "Imagen de perfil")}
-          onClick={() => handleInteraction("click", "Imagen de perfil")}
+          onMouseEnter={() => {
+            ReactPixel.track("HoverImage", {
+              event: "Hover sobre la imagen",
+              timestamp: new Date().toISOString(),
+            });
+          }}
+          onClick={() => {
+            ReactPixel.track("ClickImage", {
+              event: "Click en la imagen",
+              timestamp: new Date().toISOString(),
+            });
+          }}
           className="image-container flex w-48 h-48 lg:w-96 lg:h-96 group rounded-full border-4 border-orange-700"
         >
           <Image
@@ -84,13 +87,7 @@ export default function Home() {
           </div>
           <BotonesSociales />
           <div className="flex flex-row space-x-2 justify-between">
-            <p
-              onMouseEnter={() =>
-                handleInteraction("hover", "hover en programador")
-              }
-              onClick={() => handleInteraction("click", "click en programador")}
-              className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none"
-            >
+            <p className="opacity-40 hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">
               Programador
             </p>
             <p className="opacity-40 text-nowrap hover:opacity-100 transition-opacity duration-75 text-base lg:text-xl pt-2 cursor-default select-none">

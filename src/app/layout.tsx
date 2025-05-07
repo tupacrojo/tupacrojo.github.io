@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { useEffect } from "react";
-import { initFacebookPixel } from "@/app/lib/fbpixel";
+import ReactPixel from "react-facebook-pixel";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,9 +29,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    initFacebookPixel(); // Inicializa Meta Pixel
-  }, []);
+  // Inicializar el Pixel de Facebook
+  ReactPixel.init("691906099990143"); // Reemplaza con tu Pixel ID
+  ReactPixel.pageView(); // Registrar la vista de página
 
   return (
     <html lang="es">
