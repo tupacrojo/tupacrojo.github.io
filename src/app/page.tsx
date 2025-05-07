@@ -4,7 +4,6 @@ import BotonesSociales from "@/app/components/BotonesSociales";
 import QuienSoy from "@/app/components/QuienSoy";
 import Stack from "@/app/components/Stack";
 import CardWork from "@/app/components/CardWork";
-import ReactPixel from "react-facebook-pixel";
 
 export default function Home() {
   function calcularEdad(nacimiento: Date) {
@@ -37,13 +36,13 @@ export default function Home() {
       >
         <div
           onMouseEnter={() => {
-            ReactPixel.track("HoverImage", {
+            window.fbq("trackCustom", "HoverImage", {
               event: "Hover sobre la imagen",
               timestamp: new Date().toISOString(),
             });
           }}
           onClick={() => {
-            ReactPixel.track("ClickImage", {
+            window.fbq("trackCustom", "ClickImage", {
               event: "Click en la imagen",
               timestamp: new Date().toISOString(),
             });
