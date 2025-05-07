@@ -1,9 +1,9 @@
 import Head from "next/head";
 import type { Metadata } from "next";
+import Image from "next/image";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import dynamic from "next/dynamic";
 import PixelTracker from "./components/PixelTracker";
 
 const geistSans = localFont({
@@ -50,9 +50,8 @@ export default function RootLayout({
           }}
         />
         <noscript>
-          <img
-            height="1"
-            width="1"
+          <Image
+            alt="Facebook Pixel"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=691906099990143&ev=PageView&noscript=1"
           />
