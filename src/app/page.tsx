@@ -189,6 +189,54 @@ export default function Home() {
               </Link>
             }
           />
+          <CardWork
+            title="EightyOne"
+            content={
+              <>
+                <p>E-Commerce | Wordpress</p>
+                <p>+ Creacion de tema.</p>
+                <p>+ Configuracion de tienda.</p>
+                <p>+ Hosting y dominio.</p>
+                <p>+ Redireccion de dominios.</p>
+              </>
+            }
+            footer={
+              <Link
+                onClick={() => {
+                  window.fbq("trackCustom", "ClickEightyOne", {
+                    event: "Click en EightyOne",
+                    timestamp: new Date().toISOString(),
+                  });
+                }}
+                className="text-orange-400 hover:text-orange-500"
+                href="https://eightyone.com.ar/"
+              >
+                Demo
+              </Link>
+            }
+          />
+          <CardWork
+            title="LiafControl"
+            content={
+              <>
+                <p>Soporte y mantenimiento</p>
+              </>
+            }
+            footer={
+              <Link
+                onClick={() => {
+                  window.fbq("trackCustom", "ClickLiafControl", {
+                    event: "Click en LiafControl",
+                    timestamp: new Date().toISOString(),
+                  });
+                }}
+                className="text-orange-400 hover:text-orange-500"
+                href="https://liafcontrol.com/"
+              >
+                Demo
+              </Link>
+            }
+          />
         </div>
       </div>
     </>
