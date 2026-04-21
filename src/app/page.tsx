@@ -136,7 +136,7 @@ export default function Home() {
       >
         <h2 className="text-6xl font-bold">Trabajos</h2>
         <div className="flex flex-col flex-wrap content-around justify-evenly space-y-2 xl:space-x-4 lg:space-y-0 lg:flex-row min-h-screen">
-          <CardWork
+          /*<CardWork
             title="Full Stack"
             content={
               <>
@@ -156,7 +156,7 @@ export default function Home() {
                 </p>
               </>
             }
-          />
+          />*/
 
           <CardWork
             title="Proyecto Final"
