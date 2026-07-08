@@ -189,7 +189,7 @@ export default function Home() {
               </Link>
             }
           />
-          <CardWork
+          {/* <CardWork
             title="EightyOne"
             content={
               <>
@@ -214,7 +214,7 @@ export default function Home() {
                 Demo
               </Link>
             }
-          />
+          /> */}
           <CardWork
             title="LiafControl"
             content={
